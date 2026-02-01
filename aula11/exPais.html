@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De qual nacionalidade você é?</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+       
+    </style>
+
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    <input type="text" id ='txtpais'>
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id ='res'>
+
+    </div>
+
+    <script>
+        function pais() {
+            let txtpais = window.document.querySelector('input#txtpais')
+            let res = window.document.querySelector('div#res')
+            res.innerHTML =  `Vivendo em ${txtpais.value}`
+            if (txtpais.value === 'Brasil') {
+                res.innerHTML += '<p>Você é brasileiro</p>'
+            } else {
+                res.innerHTML += '<p>Você é estrangeiro</p>'
+                }
+
+            }
+        
+    </script>
+</body>
+</html>
