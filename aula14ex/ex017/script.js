@@ -15,6 +15,5 @@ function tabuada(){
             tab.appendChild(item)
             c++
         }
-    }
-    
+    }   
 }
